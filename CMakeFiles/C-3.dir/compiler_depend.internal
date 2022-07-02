@@ -3,8 +3,8 @@
 
 CMakeFiles/C-3.dir/main.cpp.obj
  C:/Users/Dominik/Desktop/Projekty/C-3/main.cpp
- C:/Users/Dominik/Desktop/Projekty/C-3/Other/start.cpp
- C:/Users/Dominik/Desktop/Projekty/C-3/Other/start.h
+ C:/Users/Dominik/Desktop/Projekty/C-3/Engine/Sources/start.cpp
+ C:/Users/Dominik/Desktop/Projekty/C-3/Engine/Headers/start.h
  C:/Program Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream
  C:/Program Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h
  C:/Program Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h
@@ -131,7 +131,9 @@ CMakeFiles/C-3.dir/main.cpp.obj
  C:/Program Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc
  C:/Program Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream
  C:/Program Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc
- C:/Users/Dominik/Desktop/Projekty/C-3/glew/include/GL/glew.h
- C:/Program Files/MinGw-64/mingw64/x86_64-w64-mingw32/include/inttypes.h
- C:/Users/Dominik/Desktop/Projekty/C-3/glfw/include/GLFW/glfw3.h
+ C:/Program Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath
+ C:/Program Files/MinGw-64/mingw64/x86_64-w64-mingw32/include/math.h
+ C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glad/include/glad/glad.h
+ C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glad/include/KHR/khrplatform.h
+ C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glfw/include/GLFW/glfw3.h
 

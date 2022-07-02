@@ -572,3 +572,147 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CM
 
 
 
+Determining if files sys/types.h exist passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_c182b/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c182b.dir\build.make CMakeFiles/cmTC_c182b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c182b.dir/HAVE_SYS_TYPES_H.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic  -o CMakeFiles\cmTC_c182b.dir\HAVE_SYS_TYPES_H.c.obj -c C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c
+Linking C executable cmTC_c182b.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c182b.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_c182b.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_c182b.dir/objects.a @CMakeFiles\cmTC_c182b.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\cmTC_c182b.dir/objects.a -Wl,--no-whole-archive -o cmTC_c182b.exe -Wl,--out-implib,libcmTC_c182b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c182b.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files unistd.h exist passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_55360/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_55360.dir\build.make CMakeFiles/cmTC_55360.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55360.dir/HAVE_UNISTD_H.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic  -o CMakeFiles\cmTC_55360.dir\HAVE_UNISTD_H.c.obj -c C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c
+Linking C executable cmTC_55360.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_55360.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_55360.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_55360.dir/objects.a @CMakeFiles\cmTC_55360.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\cmTC_55360.dir/objects.a -Wl,--no-whole-archive -o cmTC_55360.exe -Wl,--out-implib,libcmTC_55360.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_55360.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files sys/time.h exist passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_6aa01/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6aa01.dir\build.make CMakeFiles/cmTC_6aa01.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6aa01.dir/HAVE_SYS_TIME_H.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic  -o CMakeFiles\cmTC_6aa01.dir\HAVE_SYS_TIME_H.c.obj -c C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c
+Linking C executable cmTC_6aa01.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6aa01.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_6aa01.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_6aa01.dir/objects.a @CMakeFiles\cmTC_6aa01.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\cmTC_6aa01.dir/objects.a -Wl,--no-whole-archive -o cmTC_6aa01.exe -Wl,--out-implib,libcmTC_6aa01.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6aa01.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdbool.h exist passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_d4d87/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d4d87.dir\build.make CMakeFiles/cmTC_d4d87.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4d87.dir/HAVE_STDBOOL_H.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic  -o CMakeFiles\cmTC_d4d87.dir\HAVE_STDBOOL_H.c.obj -c C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c
+Linking C executable cmTC_d4d87.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d4d87.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_d4d87.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_d4d87.dir/objects.a @CMakeFiles\cmTC_d4d87.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\cmTC_d4d87.dir/objects.a -Wl,--no-whole-archive -o cmTC_d4d87.exe -Wl,--out-implib,libcmTC_d4d87.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d4d87.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files sys/param.h exist passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_30b7c/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_30b7c.dir\build.make CMakeFiles/cmTC_30b7c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30b7c.dir/HAVE_SYS_PARAM_H.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic  -o CMakeFiles\cmTC_30b7c.dir\HAVE_SYS_PARAM_H.c.obj -c C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c
+Linking C executable cmTC_30b7c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_30b7c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_30b7c.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_30b7c.dir/objects.a @CMakeFiles\cmTC_30b7c.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\cmTC_30b7c.dir/objects.a -Wl,--no-whole-archive -o cmTC_30b7c.exe -Wl,--out-implib,libcmTC_30b7c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_30b7c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_10f3d/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_10f3d.dir\build.make CMakeFiles/cmTC_10f3d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10f3d.dir/HAVE_FCNTL_H.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic  -o CMakeFiles\cmTC_10f3d.dir\HAVE_FCNTL_H.c.obj -c C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c
+Linking C executable cmTC_10f3d.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_10f3d.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_10f3d.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_10f3d.dir/objects.a @CMakeFiles\cmTC_10f3d.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\cmTC_10f3d.dir/objects.a -Wl,--no-whole-archive -o cmTC_10f3d.exe -Wl,--out-implib,libcmTC_10f3d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_10f3d.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_4a33a/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4a33a.dir\build.make CMakeFiles/cmTC_4a33a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a33a.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic -DCHECK_FUNCTION_EXISTS=gettimeofday -o CMakeFiles\cmTC_4a33a.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_4a33a.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4a33a.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_4a33a.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_4a33a.dir/objects.a @CMakeFiles\cmTC_4a33a.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic -DCHECK_FUNCTION_EXISTS=gettimeofday -Wl,--whole-archive CMakeFiles\cmTC_4a33a.dir/objects.a -Wl,--no-whole-archive -o cmTC_4a33a.exe -Wl,--out-implib,libcmTC_4a33a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_4a33a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdint.h exist passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_7d300/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7d300.dir\build.make CMakeFiles/cmTC_7d300.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d300.dir/HAVE_STDINT_H.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic  -o CMakeFiles\cmTC_7d300.dir\HAVE_STDINT_H.c.obj -c C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c
+Linking C executable cmTC_7d300.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7d300.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_7d300.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_7d300.dir/objects.a @CMakeFiles\cmTC_7d300.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\cmTC_7d300.dir/objects.a -Wl,--no-whole-archive -o cmTC_7d300.exe -Wl,--out-implib,libcmTC_7d300.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7d300.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_0719a/fast && C:/PROGRA~1/MinGw-64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0719a.dir\build.make CMakeFiles/cmTC_0719a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0719a.dir/HAVE_INTTYPES_H.c.obj
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe   -Wall -pedantic  -o CMakeFiles\cmTC_0719a.dir\HAVE_INTTYPES_H.c.obj -c C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c
+Linking C executable cmTC_0719a.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0719a.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_0719a.dir/objects.a
+C:\PROGRA~1\MinGw-64\mingw64\bin\ar.exe qc CMakeFiles\cmTC_0719a.dir/objects.a @CMakeFiles\cmTC_0719a.dir\objects1.rsp
+C:\PROGRA~1\MinGw-64\mingw64\bin\gcc.exe  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\cmTC_0719a.dir/objects.a -Wl,--no-whole-archive -o cmTC_0719a.exe -Wl,--out-implib,libcmTC_0719a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0719a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Dominik/Desktop/Projekty/C-3/CMakeFiles/CMakeTmp'
+
+
+

@@ -183,7 +183,7 @@ libglew_static: cmake_check_build_system
 
 # fast build rule for target.
 libglew_static/fast:
-	$(MAKE) $(MAKESILENT) -f glew\CMakeFiles\libglew_static.dir\build.make glew/CMakeFiles/libglew_static.dir/build
+	$(MAKE) $(MAKESILENT) -f Libraries\glew\CMakeFiles\libglew_static.dir\build.make Libraries/glew/CMakeFiles/libglew_static.dir/build
 .PHONY : libglew_static/fast
 
 #=============================================================================
@@ -196,7 +196,7 @@ libglew_shared: cmake_check_build_system
 
 # fast build rule for target.
 libglew_shared/fast:
-	$(MAKE) $(MAKESILENT) -f glew\CMakeFiles\libglew_shared.dir\build.make glew/CMakeFiles/libglew_shared.dir/build
+	$(MAKE) $(MAKESILENT) -f Libraries\glew\CMakeFiles\libglew_shared.dir\build.make Libraries/glew/CMakeFiles/libglew_shared.dir/build
 .PHONY : libglew_shared/fast
 
 #=============================================================================
@@ -209,7 +209,7 @@ uninstall: cmake_check_build_system
 
 # fast build rule for target.
 uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f glfw\CMakeFiles\uninstall.dir\build.make glfw/CMakeFiles/uninstall.dir/build
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\CMakeFiles\uninstall.dir\build.make Libraries/glfw/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 #=============================================================================
@@ -222,7 +222,7 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/build
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\src\CMakeFiles\glfw.dir\build.make Libraries/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 #=============================================================================
@@ -235,8 +235,34 @@ update_mappings: cmake_check_build_system
 
 # fast build rule for target.
 update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\update_mappings.dir\build.make glfw/src/CMakeFiles/update_mappings.dir/build
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\src\CMakeFiles\update_mappings.dir\build.make Libraries/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
+
+#=============================================================================
+# Target rules for targets named glad-generate-files
+
+# Build rule for target.
+glad-generate-files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glad-generate-files
+.PHONY : glad-generate-files
+
+# fast build rule for target.
+glad-generate-files/fast:
+	$(MAKE) $(MAKESILENT) -f Libraries\glad\CMakeFiles\glad-generate-files.dir\build.make Libraries/glad/CMakeFiles/glad-generate-files.dir/build
+.PHONY : glad-generate-files/fast
+
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f Libraries\glad\CMakeFiles\glad.dir\build.make Libraries/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -274,9 +300,11 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... glad-generate-files
 	@echo ... uninstall
 	@echo ... update_mappings
 	@echo ... C-3
+	@echo ... glad
 	@echo ... glfw
 	@echo ... libglew_shared
 	@echo ... libglew_static

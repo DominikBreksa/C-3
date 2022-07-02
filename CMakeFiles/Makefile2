@@ -63,109 +63,129 @@ CMAKE_BINARY_DIR = C:\Users\Dominik\Desktop\Projekty\C-3
 
 # The main recursive "all" target.
 all: CMakeFiles/C-3.dir/all
-all: glew/all
-all: glfw/all
-all: glm/all
+all: Libraries/glew/all
+all: Libraries/glfw/all
+all: Libraries/glm/all
+all: Libraries/glad/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: glew/preinstall
-preinstall: glfw/preinstall
-preinstall: glm/preinstall
+preinstall: Libraries/glew/preinstall
+preinstall: Libraries/glfw/preinstall
+preinstall: Libraries/glm/preinstall
+preinstall: Libraries/glad/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/C-3.dir/clean
-clean: glew/clean
-clean: glfw/clean
-clean: glm/clean
+clean: Libraries/glew/clean
+clean: Libraries/glfw/clean
+clean: Libraries/glm/clean
+clean: Libraries/glad/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory glew
+# Directory level rules for directory Libraries/glad
 
 # Recursive "all" directory target.
-glew/all: glew/CMakeFiles/libglew_static.dir/all
-glew/all: glew/CMakeFiles/libglew_shared.dir/all
-.PHONY : glew/all
+Libraries/glad/all: Libraries/glad/CMakeFiles/glad.dir/all
+.PHONY : Libraries/glad/all
 
 # Recursive "preinstall" directory target.
-glew/preinstall:
-.PHONY : glew/preinstall
+Libraries/glad/preinstall:
+.PHONY : Libraries/glad/preinstall
 
 # Recursive "clean" directory target.
-glew/clean: glew/CMakeFiles/libglew_static.dir/clean
-glew/clean: glew/CMakeFiles/libglew_shared.dir/clean
-.PHONY : glew/clean
+Libraries/glad/clean: Libraries/glad/CMakeFiles/glad-generate-files.dir/clean
+Libraries/glad/clean: Libraries/glad/CMakeFiles/glad.dir/clean
+.PHONY : Libraries/glad/clean
 
 #=============================================================================
-# Directory level rules for directory glfw
+# Directory level rules for directory Libraries/glew
 
 # Recursive "all" directory target.
-glfw/all: glfw/src/all
-.PHONY : glfw/all
+Libraries/glew/all: Libraries/glew/CMakeFiles/libglew_static.dir/all
+Libraries/glew/all: Libraries/glew/CMakeFiles/libglew_shared.dir/all
+.PHONY : Libraries/glew/all
 
 # Recursive "preinstall" directory target.
-glfw/preinstall: glfw/src/preinstall
-.PHONY : glfw/preinstall
+Libraries/glew/preinstall:
+.PHONY : Libraries/glew/preinstall
 
 # Recursive "clean" directory target.
-glfw/clean: glfw/CMakeFiles/uninstall.dir/clean
-glfw/clean: glfw/src/clean
-.PHONY : glfw/clean
+Libraries/glew/clean: Libraries/glew/CMakeFiles/libglew_static.dir/clean
+Libraries/glew/clean: Libraries/glew/CMakeFiles/libglew_shared.dir/clean
+.PHONY : Libraries/glew/clean
 
 #=============================================================================
-# Directory level rules for directory glfw/src
+# Directory level rules for directory Libraries/glfw
 
 # Recursive "all" directory target.
-glfw/src/all: glfw/src/CMakeFiles/glfw.dir/all
-.PHONY : glfw/src/all
+Libraries/glfw/all: Libraries/glfw/src/all
+.PHONY : Libraries/glfw/all
 
 # Recursive "preinstall" directory target.
-glfw/src/preinstall:
-.PHONY : glfw/src/preinstall
+Libraries/glfw/preinstall: Libraries/glfw/src/preinstall
+.PHONY : Libraries/glfw/preinstall
 
 # Recursive "clean" directory target.
-glfw/src/clean: glfw/src/CMakeFiles/glfw.dir/clean
-glfw/src/clean: glfw/src/CMakeFiles/update_mappings.dir/clean
-.PHONY : glfw/src/clean
+Libraries/glfw/clean: Libraries/glfw/CMakeFiles/uninstall.dir/clean
+Libraries/glfw/clean: Libraries/glfw/src/clean
+.PHONY : Libraries/glfw/clean
 
 #=============================================================================
-# Directory level rules for directory glm
+# Directory level rules for directory Libraries/glfw/src
 
 # Recursive "all" directory target.
-glm/all: glm/glm/all
-.PHONY : glm/all
+Libraries/glfw/src/all: Libraries/glfw/src/CMakeFiles/glfw.dir/all
+.PHONY : Libraries/glfw/src/all
 
 # Recursive "preinstall" directory target.
-glm/preinstall: glm/glm/preinstall
-.PHONY : glm/preinstall
+Libraries/glfw/src/preinstall:
+.PHONY : Libraries/glfw/src/preinstall
 
 # Recursive "clean" directory target.
-glm/clean: glm/glm/clean
-.PHONY : glm/clean
+Libraries/glfw/src/clean: Libraries/glfw/src/CMakeFiles/glfw.dir/clean
+Libraries/glfw/src/clean: Libraries/glfw/src/CMakeFiles/update_mappings.dir/clean
+.PHONY : Libraries/glfw/src/clean
 
 #=============================================================================
-# Directory level rules for directory glm/glm
+# Directory level rules for directory Libraries/glm
 
 # Recursive "all" directory target.
-glm/glm/all:
-.PHONY : glm/glm/all
+Libraries/glm/all: Libraries/glm/glm/all
+.PHONY : Libraries/glm/all
 
 # Recursive "preinstall" directory target.
-glm/glm/preinstall:
-.PHONY : glm/glm/preinstall
+Libraries/glm/preinstall: Libraries/glm/glm/preinstall
+.PHONY : Libraries/glm/preinstall
 
 # Recursive "clean" directory target.
-glm/glm/clean:
-.PHONY : glm/glm/clean
+Libraries/glm/clean: Libraries/glm/glm/clean
+.PHONY : Libraries/glm/clean
+
+#=============================================================================
+# Directory level rules for directory Libraries/glm/glm
+
+# Recursive "all" directory target.
+Libraries/glm/glm/all:
+.PHONY : Libraries/glm/glm/all
+
+# Recursive "preinstall" directory target.
+Libraries/glm/glm/preinstall:
+.PHONY : Libraries/glm/glm/preinstall
+
+# Recursive "clean" directory target.
+Libraries/glm/glm/clean:
+.PHONY : Libraries/glm/glm/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/C-3.dir
 
 # All Build rule for target.
-CMakeFiles/C-3.dir/all: glew/CMakeFiles/libglew_static.dir/all
-CMakeFiles/C-3.dir/all: glfw/src/CMakeFiles/glfw.dir/all
+CMakeFiles/C-3.dir/all: Libraries/glew/CMakeFiles/libglew_static.dir/all
+CMakeFiles/C-3.dir/all: Libraries/glfw/src/CMakeFiles/glfw.dir/all
+CMakeFiles/C-3.dir/all: Libraries/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C-3.dir\build.make CMakeFiles/C-3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C-3.dir\build.make CMakeFiles/C-3.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=1,2 "Built target C-3"
@@ -173,7 +193,7 @@ CMakeFiles/C-3.dir/all: glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/C-3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/C-3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
 .PHONY : CMakeFiles/C-3.dir/rule
@@ -188,134 +208,186 @@ CMakeFiles/C-3.dir/clean:
 .PHONY : CMakeFiles/C-3.dir/clean
 
 #=============================================================================
-# Target rules for target glew/CMakeFiles/libglew_static.dir
+# Target rules for target Libraries/glew/CMakeFiles/libglew_static.dir
 
 # All Build rule for target.
-glew/CMakeFiles/libglew_static.dir/all:
-	$(MAKE) $(MAKESILENT) -f glew\CMakeFiles\libglew_static.dir\build.make glew/CMakeFiles/libglew_static.dir/depend
-	$(MAKE) $(MAKESILENT) -f glew\CMakeFiles\libglew_static.dir\build.make glew/CMakeFiles/libglew_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=27,28 "Built target libglew_static"
-.PHONY : glew/CMakeFiles/libglew_static.dir/all
+Libraries/glew/CMakeFiles/libglew_static.dir/all:
+	$(MAKE) $(MAKESILENT) -f Libraries\glew\CMakeFiles\libglew_static.dir\build.make Libraries/glew/CMakeFiles/libglew_static.dir/depend
+	$(MAKE) $(MAKESILENT) -f Libraries\glew\CMakeFiles\libglew_static.dir\build.make Libraries/glew/CMakeFiles/libglew_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=31,32 "Built target libglew_static"
+.PHONY : Libraries/glew/CMakeFiles/libglew_static.dir/all
 
 # Build rule for subdir invocation for target.
-glew/CMakeFiles/libglew_static.dir/rule: cmake_check_build_system
+Libraries/glew/CMakeFiles/libglew_static.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glew/CMakeFiles/libglew_static.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libraries/glew/CMakeFiles/libglew_static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
-.PHONY : glew/CMakeFiles/libglew_static.dir/rule
+.PHONY : Libraries/glew/CMakeFiles/libglew_static.dir/rule
 
 # Convenience name for target.
-libglew_static: glew/CMakeFiles/libglew_static.dir/rule
+libglew_static: Libraries/glew/CMakeFiles/libglew_static.dir/rule
 .PHONY : libglew_static
 
 # clean rule for target.
-glew/CMakeFiles/libglew_static.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glew\CMakeFiles\libglew_static.dir\build.make glew/CMakeFiles/libglew_static.dir/clean
-.PHONY : glew/CMakeFiles/libglew_static.dir/clean
+Libraries/glew/CMakeFiles/libglew_static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Libraries\glew\CMakeFiles\libglew_static.dir\build.make Libraries/glew/CMakeFiles/libglew_static.dir/clean
+.PHONY : Libraries/glew/CMakeFiles/libglew_static.dir/clean
 
 #=============================================================================
-# Target rules for target glew/CMakeFiles/libglew_shared.dir
+# Target rules for target Libraries/glew/CMakeFiles/libglew_shared.dir
 
 # All Build rule for target.
-glew/CMakeFiles/libglew_shared.dir/all:
-	$(MAKE) $(MAKESILENT) -f glew\CMakeFiles\libglew_shared.dir\build.make glew/CMakeFiles/libglew_shared.dir/depend
-	$(MAKE) $(MAKESILENT) -f glew\CMakeFiles\libglew_shared.dir\build.make glew/CMakeFiles/libglew_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=25,26 "Built target libglew_shared"
-.PHONY : glew/CMakeFiles/libglew_shared.dir/all
+Libraries/glew/CMakeFiles/libglew_shared.dir/all:
+	$(MAKE) $(MAKESILENT) -f Libraries\glew\CMakeFiles\libglew_shared.dir\build.make Libraries/glew/CMakeFiles/libglew_shared.dir/depend
+	$(MAKE) $(MAKESILENT) -f Libraries\glew\CMakeFiles\libglew_shared.dir\build.make Libraries/glew/CMakeFiles/libglew_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=29,30 "Built target libglew_shared"
+.PHONY : Libraries/glew/CMakeFiles/libglew_shared.dir/all
 
 # Build rule for subdir invocation for target.
-glew/CMakeFiles/libglew_shared.dir/rule: cmake_check_build_system
+Libraries/glew/CMakeFiles/libglew_shared.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glew/CMakeFiles/libglew_shared.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libraries/glew/CMakeFiles/libglew_shared.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
-.PHONY : glew/CMakeFiles/libglew_shared.dir/rule
+.PHONY : Libraries/glew/CMakeFiles/libglew_shared.dir/rule
 
 # Convenience name for target.
-libglew_shared: glew/CMakeFiles/libglew_shared.dir/rule
+libglew_shared: Libraries/glew/CMakeFiles/libglew_shared.dir/rule
 .PHONY : libglew_shared
 
 # clean rule for target.
-glew/CMakeFiles/libglew_shared.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glew\CMakeFiles\libglew_shared.dir\build.make glew/CMakeFiles/libglew_shared.dir/clean
-.PHONY : glew/CMakeFiles/libglew_shared.dir/clean
+Libraries/glew/CMakeFiles/libglew_shared.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Libraries\glew\CMakeFiles\libglew_shared.dir\build.make Libraries/glew/CMakeFiles/libglew_shared.dir/clean
+.PHONY : Libraries/glew/CMakeFiles/libglew_shared.dir/clean
 
 #=============================================================================
-# Target rules for target glfw/CMakeFiles/uninstall.dir
+# Target rules for target Libraries/glfw/CMakeFiles/uninstall.dir
 
 # All Build rule for target.
-glfw/CMakeFiles/uninstall.dir/all:
-	$(MAKE) $(MAKESILENT) -f glfw\CMakeFiles\uninstall.dir\build.make glfw/CMakeFiles/uninstall.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw\CMakeFiles\uninstall.dir\build.make glfw/CMakeFiles/uninstall.dir/build
+Libraries/glfw/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\CMakeFiles\uninstall.dir\build.make Libraries/glfw/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\CMakeFiles\uninstall.dir\build.make Libraries/glfw/CMakeFiles/uninstall.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num= "Built target uninstall"
-.PHONY : glfw/CMakeFiles/uninstall.dir/all
+.PHONY : Libraries/glfw/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
-glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+Libraries/glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/CMakeFiles/uninstall.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libraries/glfw/CMakeFiles/uninstall.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
-.PHONY : glfw/CMakeFiles/uninstall.dir/rule
+.PHONY : Libraries/glfw/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
-uninstall: glfw/CMakeFiles/uninstall.dir/rule
+uninstall: Libraries/glfw/CMakeFiles/uninstall.dir/rule
 .PHONY : uninstall
 
 # clean rule for target.
-glfw/CMakeFiles/uninstall.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw\CMakeFiles\uninstall.dir\build.make glfw/CMakeFiles/uninstall.dir/clean
-.PHONY : glfw/CMakeFiles/uninstall.dir/clean
+Libraries/glfw/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\CMakeFiles\uninstall.dir\build.make Libraries/glfw/CMakeFiles/uninstall.dir/clean
+.PHONY : Libraries/glfw/CMakeFiles/uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target glfw/src/CMakeFiles/glfw.dir
+# Target rules for target Libraries/glfw/src/CMakeFiles/glfw.dir
 
 # All Build rule for target.
-glfw/src/CMakeFiles/glfw.dir/all:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target glfw"
-.PHONY : glfw/src/CMakeFiles/glfw.dir/all
+Libraries/glfw/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\src\CMakeFiles\glfw.dir\build.make Libraries/glfw/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\src\CMakeFiles\glfw.dir\build.make Libraries/glfw/src/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target glfw"
+.PHONY : Libraries/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
-glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+Libraries/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 22
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libraries/glfw/src/CMakeFiles/glfw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
-.PHONY : glfw/src/CMakeFiles/glfw.dir/rule
+.PHONY : Libraries/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
-glfw: glfw/src/CMakeFiles/glfw.dir/rule
+glfw: Libraries/glfw/src/CMakeFiles/glfw.dir/rule
 .PHONY : glfw
 
 # clean rule for target.
-glfw/src/CMakeFiles/glfw.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\glfw.dir\build.make glfw/src/CMakeFiles/glfw.dir/clean
-.PHONY : glfw/src/CMakeFiles/glfw.dir/clean
+Libraries/glfw/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\src\CMakeFiles\glfw.dir\build.make Libraries/glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : Libraries/glfw/src/CMakeFiles/glfw.dir/clean
 
 #=============================================================================
-# Target rules for target glfw/src/CMakeFiles/update_mappings.dir
+# Target rules for target Libraries/glfw/src/CMakeFiles/update_mappings.dir
 
 # All Build rule for target.
-glfw/src/CMakeFiles/update_mappings.dir/all:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\update_mappings.dir\build.make glfw/src/CMakeFiles/update_mappings.dir/depend
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\update_mappings.dir\build.make glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=29 "Built target update_mappings"
-.PHONY : glfw/src/CMakeFiles/update_mappings.dir/all
+Libraries/glfw/src/CMakeFiles/update_mappings.dir/all:
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\src\CMakeFiles\update_mappings.dir\build.make Libraries/glfw/src/CMakeFiles/update_mappings.dir/depend
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\src\CMakeFiles\update_mappings.dir\build.make Libraries/glfw/src/CMakeFiles/update_mappings.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=33 "Built target update_mappings"
+.PHONY : Libraries/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
-glfw/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
+Libraries/glfw/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw/src/CMakeFiles/update_mappings.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libraries/glfw/src/CMakeFiles/update_mappings.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
-.PHONY : glfw/src/CMakeFiles/update_mappings.dir/rule
+.PHONY : Libraries/glfw/src/CMakeFiles/update_mappings.dir/rule
 
 # Convenience name for target.
-update_mappings: glfw/src/CMakeFiles/update_mappings.dir/rule
+update_mappings: Libraries/glfw/src/CMakeFiles/update_mappings.dir/rule
 .PHONY : update_mappings
 
 # clean rule for target.
-glfw/src/CMakeFiles/update_mappings.dir/clean:
-	$(MAKE) $(MAKESILENT) -f glfw\src\CMakeFiles\update_mappings.dir\build.make glfw/src/CMakeFiles/update_mappings.dir/clean
-.PHONY : glfw/src/CMakeFiles/update_mappings.dir/clean
+Libraries/glfw/src/CMakeFiles/update_mappings.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Libraries\glfw\src\CMakeFiles\update_mappings.dir\build.make Libraries/glfw/src/CMakeFiles/update_mappings.dir/clean
+.PHONY : Libraries/glfw/src/CMakeFiles/update_mappings.dir/clean
+
+#=============================================================================
+# Target rules for target Libraries/glad/CMakeFiles/glad-generate-files.dir
+
+# All Build rule for target.
+Libraries/glad/CMakeFiles/glad-generate-files.dir/all:
+	$(MAKE) $(MAKESILENT) -f Libraries\glad\CMakeFiles\glad-generate-files.dir\build.make Libraries/glad/CMakeFiles/glad-generate-files.dir/depend
+	$(MAKE) $(MAKESILENT) -f Libraries\glad\CMakeFiles\glad-generate-files.dir\build.make Libraries/glad/CMakeFiles/glad-generate-files.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=6 "Built target glad-generate-files"
+.PHONY : Libraries/glad/CMakeFiles/glad-generate-files.dir/all
+
+# Build rule for subdir invocation for target.
+Libraries/glad/CMakeFiles/glad-generate-files.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libraries/glad/CMakeFiles/glad-generate-files.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
+.PHONY : Libraries/glad/CMakeFiles/glad-generate-files.dir/rule
+
+# Convenience name for target.
+glad-generate-files: Libraries/glad/CMakeFiles/glad-generate-files.dir/rule
+.PHONY : glad-generate-files
+
+# clean rule for target.
+Libraries/glad/CMakeFiles/glad-generate-files.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Libraries\glad\CMakeFiles\glad-generate-files.dir\build.make Libraries/glad/CMakeFiles/glad-generate-files.dir/clean
+.PHONY : Libraries/glad/CMakeFiles/glad-generate-files.dir/clean
+
+#=============================================================================
+# Target rules for target Libraries/glad/CMakeFiles/glad.dir
+
+# All Build rule for target.
+Libraries/glad/CMakeFiles/glad.dir/all: Libraries/glad/CMakeFiles/glad-generate-files.dir/all
+	$(MAKE) $(MAKESILENT) -f Libraries\glad\CMakeFiles\glad.dir\build.make Libraries/glad/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f Libraries\glad\CMakeFiles\glad.dir\build.make Libraries/glad/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles --progress-num=3,4,5 "Built target glad"
+.PHONY : Libraries/glad/CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+Libraries/glad/CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libraries/glad/CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dominik\Desktop\Projekty\C-3\CMakeFiles 0
+.PHONY : Libraries/glad/CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: Libraries/glad/CMakeFiles/glad.dir/rule
+.PHONY : glad
+
+# clean rule for target.
+Libraries/glad/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Libraries\glad\CMakeFiles\glad.dir\build.make Libraries/glad/CMakeFiles/glad.dir/clean
+.PHONY : Libraries/glad/CMakeFiles/glad.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

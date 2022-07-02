@@ -92,8 +92,9 @@ C__3_EXTERNAL_OBJECTS =
 
 C-3.exe: CMakeFiles/C-3.dir/main.cpp.obj
 C-3.exe: CMakeFiles/C-3.dir/build.make
-C-3.exe: glew/lib/libglew.a
-C-3.exe: glfw/src/libglfw3.a
+C-3.exe: Libraries/glew/lib/libglew.a
+C-3.exe: Libraries/glfw/src/libglfw3.a
+C-3.exe: Libraries/glad/libglad.a
 C-3.exe: CMakeFiles/C-3.dir/linklibs.rsp
 C-3.exe: CMakeFiles/C-3.dir/objects1.rsp
 C-3.exe: CMakeFiles/C-3.dir/link.txt

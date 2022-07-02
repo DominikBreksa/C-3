@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Generate Doxygen documentation
+BUILD_DOCUMENTATION:BOOL=OFF
+
+//Build examples
+BUILD_SAMPLES:BOOL=ON
+
 //Build shared libraries
 BUILD_SHARED_LIBS:BOOL=OFF
 
@@ -314,11 +320,76 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Doxygen documentation generation tool (http://www.doxygen.org)
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
+//Build FreeGLUT demos.
+FREEGLUT_BUILD_DEMOS:BOOL=ON
+
+//Build FreeGLUT shared library.
+FREEGLUT_BUILD_SHARED_LIBS:BOOL=ON
+
+//Build FreeGLUT static library.
+FREEGLUT_BUILD_STATIC_LIBS:BOOL=ON
+
+//Use OpenGL ES (requires EGL)
+FREEGLUT_GLES:BOOL=OFF
+
+//Lib prints errors to stderr
+FREEGLUT_PRINT_ERRORS:BOOL=ON
+
+//Lib prints warnings to stderr
+FREEGLUT_PRINT_WARNINGS:BOOL=ON
+
+//Be a replacement for GLUT
+FREEGLUT_REPLACE_GLUT:BOOL=OFF
+
+//Include all extensions instead of those specified by GLAD_EXTENSIONS
+GLAD_ALL_EXTENSIONS:BOOL=OFF
+
+//API type/version pairs, like "gl=3.2,gles=", no version means
+// latest
+GLAD_API:STRING=
+
+//Value Computed by CMake
+GLAD_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glad
+
+//Set export variables for external project
+GLAD_EXPORT:BOOL=ON
+
+//Path to extensions file or comma separated list of extensions,
+// if missing all extensions are included
+GLAD_EXTENSIONS:STRING=
+
+//Language to generate the binding for
+GLAD_GENERATOR:STRING=c
+
+//Generate installation target
+GLAD_INSTALL:BOOL=OFF
+
+//Value Computed by CMake
+GLAD_IS_TOP_LEVEL:STATIC=OFF
+
+//No loader
+GLAD_NO_LOADER:BOOL=OFF
+
+//Output directory
+GLAD_OUT_DIR:STRING=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glad
+
+//OpenGL profile
+GLAD_PROFILE:STRING=compatibility
+
+//Reproducible build
+GLAD_REPRODUCIBLE:BOOL=OFF
+
+//Value Computed by CMake
+GLAD_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glad
+
+//Name of the spec or list of multiple specs (separated by semicolons).
+GLAD_SPEC:STRING=gl
+
 //Off-screen Mesa mode
 GLEW_OSMESA:BOOL=OFF
 
 //Value Computed by CMake
-GLFW_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/glfw
+GLFW_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glfw
 
 //Build the GLFW documentation
 GLFW_BUILD_DOCS:BOOL=ON
@@ -343,10 +414,13 @@ GLFW_IS_TOP_LEVEL:STATIC=OFF
 GLFW_LIBRARY_TYPE:STRING=
 
 //Value Computed by CMake
-GLFW_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/glfw
+GLFW_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glfw
 
 //Force use of high-performance GPU on hybrid systems
 GLFW_USE_HYBRID_HPG:BOOL=OFF
+
+//Enables error checks for all OpenGL calls
+GL_DEBUG:BOOL=ON
 
 //Do not build executables
 ONLY_LIBS:BOOL=OFF
@@ -357,11 +431,59 @@ OPENGL_gl_LIBRARY:STRING=opengl32
 //GLU library for win32
 OPENGL_glu_LIBRARY:STRING=glu32
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+
 //Generate pc file for specified target as glew. libglew_static|libglew_shared
 PKG_CONFIG_REPRESENTATIVE_TARGET:BOOL=OFF
 
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=Qt5Core_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=Qt5Gui_DIR-NOTFOUND
+
 //Use GLU
 USE_GLU:BOOL=OFF
+
+//Enable logging with easylogging++
+WITH_EASYLOGGING:BOOL=ON
+
+//Support for glm types (e.g. in GlProgram)
+WITH_GLM:BOOL=ON
+
+//Load texture from png files
+WITH_LIBPNG:BOOL=ON
+
+//Support for Qt types (e.g. in GlProgram)
+WITH_QT:BOOL=ON
+
+//Path to a file.
+ZLIB_INCLUDE_DIR:PATH=ZLIB_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+ZLIB_LIBRARY_RELEASE:FILEPATH=ZLIB_LIBRARY_RELEASE-NOTFOUND
+
+//Value Computed by CMake
+freeglut_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/glut
+
+//Value Computed by CMake
+freeglut_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+freeglut_LIB_DEPENDS:STATIC=general;opengl32;general;winmm;general;gdi32;
+
+//Value Computed by CMake
+freeglut_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/glut
+
+//Dependencies for the target
+freeglut_static_LIB_DEPENDS:STATIC=general;opengl32;general;winmm;general;gdi32;
 
 //Build the shared glew library
 glew-cmake_BUILD_SHARED:BOOL=ON
@@ -370,22 +492,40 @@ glew-cmake_BUILD_SHARED:BOOL=ON
 glew-cmake_BUILD_STATIC:BOOL=ON
 
 //Value Computed by CMake
-glew_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/glew
+glew_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glew
 
 //Value Computed by CMake
 glew_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-glew_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/glew
+glew_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glew
 
 //Value Computed by CMake
-glm_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/glm
+glm_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glm
 
 //Value Computed by CMake
 glm_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-glm_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/glm
+glm_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glm
+
+//Value Computed by CMake
+glue_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glue
+
+//Value Computed by CMake
+glue_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+glue_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glue
+
+//Value Computed by CMake
+ogl-tester_BINARY_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glue/samples
+
+//Value Computed by CMake
+ogl-tester_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ogl-tester_SOURCE_DIR:STATIC=C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glue/samples
 
 
 ########################
@@ -528,7 +668,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -588,20 +728,61 @@ DINPUT_H_FOUND:INTERNAL=1
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[C:/Users/Dominik/AppData/Local/Programs/Python/Python310/python.exe][cfound components: Interpreter ][v3.10.4()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //GLFW pkg-config Libs.private
 GLFW_PKG_CONFIG_LIBS_PRIVATE:INTERNAL= -lgdi32
 //GLFW pkg-config Requires.private
 GLFW_PKG_CONFIG_REQUIRES_PRIVATE:INTERNAL=
+//Have include fcntl.h
+HAVE_FCNTL_H:INTERNAL=1
+//Have function gettimeofday
+HAVE_GETTIMEOFDAY:INTERNAL=1
+//Have include inttypes.h
+HAVE_INTTYPES_H:INTERNAL=1
+//Have include stdbool.h
+HAVE_STDBOOL_H:INTERNAL=1
+//Have include stdint.h
+HAVE_STDINT_H:INTERNAL=1
+//Have includes sys/ioctl.h
+HAVE_SYS_IOCTL_H:INTERNAL=
+//Have include sys/param.h
+HAVE_SYS_PARAM_H:INTERNAL=1
+//Have include sys/time.h
+HAVE_SYS_TIME_H:INTERNAL=1
+//Have include sys/types.h
+HAVE_SYS_TYPES_H:INTERNAL=1
+//Have include unistd.h
+HAVE_UNISTD_H:INTERNAL=1
+//Have includes usbhid.h
+HAVE_USBHID_H:INTERNAL=
+//Have function XParseGeometry
+HAVE_XPARSEGEOMETRY:INTERNAL=
 //ADVANCED property for variable: OPENGL_gl_LIBRARY
 OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glu_LIBRARY
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Have include xinput.h
 XINPUT_H_FOUND:INTERNAL=1
+//ADVANCED property for variable: ZLIB_INCLUDE_DIR
+ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_DEBUG
+ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_RELEASE
+ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/C-3
+//Path to a program.
+_Python_EXECUTABLE:INTERNAL=C:/Users/Dominik/AppData/Local/Programs/Python/Python310/python.exe
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;4;64;;cp310-win_amd64;C:\Users\Dominik\AppData\Local\Programs\Python\Python310\Lib;C:\Users\Dominik\AppData\Local\Programs\Python\Python310\Lib;C:\Users\Dominik\AppData\Local\Programs\Python\Python310\Lib\site-packages;C:\Users\Dominik\AppData\Local\Programs\Python\Python310\Lib\site-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=5c0ec4498813fbc99188da5e364a5311
 

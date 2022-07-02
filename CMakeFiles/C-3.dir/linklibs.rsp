@@ -1,1 +1,1 @@
- glew/lib/libglew.a glfw/src/libglfw3.a -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ Libraries/glew/lib/libglew.a Libraries/glfw/src/libglfw3.a Libraries/glad/libglad.a -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

@@ -39,17 +39,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Dominik/Desktop/Projekty/C-3/glew/cmake_install.cmake")
+  include("C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glew/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Dominik/Desktop/Projekty/C-3/glfw/cmake_install.cmake")
+  include("C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glfw/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Dominik/Desktop/Projekty/C-3/glm/cmake_install.cmake")
+  include("C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glm/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Dominik/Desktop/Projekty/C-3/Libraries/glad/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
