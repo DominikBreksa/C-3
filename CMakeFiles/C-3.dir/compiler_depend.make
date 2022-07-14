@@ -130,6 +130,8 @@ CMakeFiles/C-3.dir/main.cpp.obj: main.cpp \
   C:/Program\ Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
   C:/Program\ Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+  Engine/Sources/display.cpp \
+  Engine/Headers/display.h \
   C:/Program\ Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
   C:/Program\ Files/MinGw-64/mingw64/x86_64-w64-mingw32/include/math.h \
   Libraries/glad/include/glad/glad.h \
@@ -396,6 +398,10 @@ C:/Program\ Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/
 C:/Program\ Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream:
 
 C:/Program\ Files/MinGw-64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc:
+
+Engine/Sources/display.cpp:
+
+Engine/Headers/display.h:
 
 C:/Program\ Files/MinGw-64/mingw64/x86_64-w64-mingw32/include/math.h:
 

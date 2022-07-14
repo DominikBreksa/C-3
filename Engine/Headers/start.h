@@ -1,5 +1,6 @@
 	#ifndef START_H
 		#define START_H
+		
 		#define MAX_WIDTH 875
 		#define MAX_HIGHT 700
 		#define MIN_WIDTH 375
